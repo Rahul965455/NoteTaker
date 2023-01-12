@@ -24,7 +24,7 @@ console.log(typeof id)
     const notes = JSON.parse(localStorage.getItem("notes"));
     const updatedNotes = notes.map((note) => {
    
-      if (note.id === id ) {
+      if (note.id === idNumber) {
         return { ...note, title, desc };
       }
       return note;
